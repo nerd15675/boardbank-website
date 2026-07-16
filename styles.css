@@ -1,4 +1,11 @@
-/* BoardBank Website Styles */
+/* ===================================
+   BoardBank Website Styles
+   =================================== */
+
+
+/* ===================================
+   Reset & Base
+   =================================== */
 
 * {
     box-sizing: border-box;
@@ -6,56 +13,83 @@
     padding: 0;
 }
 
+
 html {
     scroll-behavior: smooth;
 }
 
+
 body {
+
     font-family: "Inter", sans-serif;
+
     background: #f8fafc;
+
     color: #111827;
+
     line-height: 1.6;
+
 }
 
 
-/* Navigation */
+
+/* ===================================
+   Navigation
+   =================================== */
+
 
 header {
+
     position: sticky;
+
     top: 0;
+
     z-index: 10;
 
     backdrop-filter: blur(15px);
+
     background: rgba(255, 255, 255, 0.7);
+
 }
 
 
+
 .navbar {
+
     max-width: 1200px;
+
     margin: auto;
 
     padding: 20px 30px;
 
+    height: 85px;
+
     display: flex;
+
     justify-content: space-between;
+
     align-items: center;
 
-    height: 85px;
 }
+
 
 
 .logo img {
 
     height: 55px;
+
     width: auto;
+
     max-width: 180px;
 
     object-fit: contain;
+
     display: block;
 
     transition: transform 0.3s ease;
 
 }
+
 
 
 .logo img:hover {
@@ -65,21 +99,29 @@ header {
 }
 
 
+
 .nav-links {
 
     display: flex;
+
     gap: 25px;
 
 }
 
 
+
 .nav-links a {
 
     text-decoration: none;
+
     color: inherit;
+
     opacity: 0.8;
 
+    transition: opacity 0.2s ease;
+
 }
+
 
 
 .nav-links a:hover {
@@ -89,22 +131,31 @@ header {
 }
 
 
-/* Hero */
+
+
+/* ===================================
+   Hero Section
+   =================================== */
+
 
 .hero {
 
     max-width: 1200px;
+
     margin: auto;
 
     padding: 100px 30px;
 
     display: flex;
+
     align-items: center;
+
     justify-content: space-between;
 
     gap: 60px;
 
 }
+
 
 
 .hero-text {
@@ -114,34 +165,47 @@ header {
 }
 
 
+
 .hero h1 {
 
     font-size: clamp(40px, 6vw, 72px);
+
     line-height: 1.05;
+
     font-weight: 800;
 
 }
 
 
+
 .hero p {
 
     margin-top: 25px;
+
     font-size: 20px;
+
     opacity: 0.75;
 
 }
 
 
-/* Buttons */
+
+
+/* ===================================
+   Buttons
+   =================================== */
+
 
 .buttons {
 
     margin-top: 40px;
 
     display: flex;
+
     gap: 15px;
 
 }
+
 
 
 .button {
@@ -159,12 +223,15 @@ header {
 }
 
 
+
 .primary {
 
     background: #00c853;
+
     color: white;
 
 }
+
 
 
 .primary:hover {
@@ -174,15 +241,22 @@ header {
 }
 
 
+
 .secondary {
 
     border: 1px solid #d1d5db;
+
     color: inherit;
 
 }
 
 
-/* App Screenshot Phone */
+
+
+/* ===================================
+   App Screenshot Phone
+   =================================== */
+
 
 .phone {
 
@@ -199,6 +273,7 @@ header {
 }
 
 
+
 .phone img {
 
     width: 100%;
@@ -210,33 +285,49 @@ header {
 }
 
 
+
 @keyframes float {
 
     0% {
+
         transform: translateY(0);
+
     }
+
 
     50% {
+
         transform: translateY(-15px);
+
     }
 
+
     100% {
+
         transform: translateY(0);
+
     }
 
 }
 
 
-/* Sections */
+
+
+/* ===================================
+   General Sections
+   =================================== */
+
 
 section {
 
     max-width: 1200px;
+
     margin: auto;
 
     padding: 80px 30px;
 
 }
+
 
 
 section h2 {
@@ -248,7 +339,12 @@ section h2 {
 }
 
 
-/* Feature Cards */
+
+
+/* ===================================
+   Feature Cards
+   =================================== */
+
 
 .feature-grid {
 
@@ -259,6 +355,7 @@ section h2 {
     gap: 25px;
 
 }
+
 
 
 .card {
@@ -276,6 +373,7 @@ section h2 {
 }
 
 
+
 .card:hover {
 
     transform: translateY(-5px);
@@ -283,13 +381,11 @@ section h2 {
 }
 
 
-/* FAQ */
 
-#faq .card {
 
-    margin-bottom: 25px;
-
-}
+/* ===================================
+   Screenshot Gallery
+   =================================== */
 
 
 .screenshot-gallery {
@@ -304,9 +400,8 @@ section h2 {
 
     scroll-snap-type: x mandatory;
 
-    scrollbar-width: auto;
-
 }
+
 
 
 .screenshot-gallery::-webkit-scrollbar {
@@ -315,12 +410,6 @@ section h2 {
 
 }
 
-
-.screenshot-gallery::-webkit-scrollbar-thumb {
-
-    border-radius: 10px;
-
-}
 
 
 .screenshot-card {
@@ -333,8 +422,6 @@ section h2 {
 
     overflow: hidden;
 
-    background: transparent;
-
     box-shadow: 0 20px 50px rgba(0,0,0,0.15);
 
     transition: transform 0.3s ease;
@@ -342,11 +429,13 @@ section h2 {
 }
 
 
+
 .screenshot-card:hover {
 
     transform: translateY(-8px);
 
 }
+
 
 
 .screenshot-card img {
@@ -360,6 +449,7 @@ section h2 {
 }
 
 
+
 .scroll-hint {
 
     opacity: 0.6;
@@ -371,248 +461,12 @@ section h2 {
 }
 
 
-/* Footer */
 
-footer {
 
-    padding: 40px 30px;
+/* ===================================
+   Download Section
+   =================================== */
 
-    text-align: center;
-
-    display: flex;
-
-    justify-content: center;
-
-    gap: 25px;
-
-}
-
-
-footer a {
-
-    color: inherit;
-
-}
-
-
-/* Dark Mode */
-
-@media (prefers-color-scheme: dark) {
-
-
-    body {
-
-        background: #0b1220;
-
-        color: white;
-
-    }
-
-
-    header {
-
-        background: rgba(11,18,32,0.7);
-
-    }
-
-
-    .card {
-
-        background: #161f2e;
-
-        color: white;
-
-    }
-
-
-    .secondary {
-
-        border-color: #374151;
-
-        color: white;
-
-    }
-
-
-    .screenshot-card {
-
-        background: transparent;
-
-    }
-
-
-    .store-button {
-
-    background: white;
-
-    color: #111827;
-
-    }
-
-}
-
-
-@media (max-width: 700px) {
-
-    .screenshot-card {
-
-        flex: 0 0 220px;
-
-    }
-
-}
-
-
-/* Support Form */
-
-.support-form {
-
-    display: flex;
-
-    flex-direction: column;
-
-    gap: 18px;
-
-    max-width: 700px;
-
-    margin-top: 40px;
-
-}
-
-
-.support-form input,
-.support-form textarea {
-
-    padding: 16px;
-
-    border-radius: 15px;
-
-    border: 1px solid #d1d5db;
-
-    font-family: inherit;
-
-    font-size: 16px;
-
-}
-
-
-.support-form textarea {
-
-    resize: vertical;
-
-    min-height: 180px;
-
-}
-
-
-.support-form button {
-
-    width: fit-content;
-
-    cursor: pointer;
-
-    border: none;
-
-}
-
-
-/* Thank You Page */
-
-.thanks-page {
-
-    min-height: 75vh;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    padding: 40px;
-
-}
-
-.thanks-card {
-
-    max-width: 600px;
-
-    text-align: center;
-
-    padding: 50px;
-
-    border-radius: 30px;
-
-    background: white;
-
-    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
-
-}
-
-.checkmark {
-
-    width: 90px;
-    height: 90px;
-
-    margin: 0 auto 30px;
-
-    border-radius: 50%;
-
-    background: #00c853;
-
-    color: white;
-
-    font-size: 50px;
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-
-    animation: pop 0.5s ease;
-
-}
-
-.thanks-card h1 {
-
-    margin-bottom: 20px;
-
-}
-
-.thanks-card p {
-
-    margin-bottom: 35px;
-
-    opacity: .8;
-
-}
-
-@keyframes pop {
-
-    0% {
-        transform: scale(.2);
-        opacity: 0;
-    }
-
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-
-}
-
-@media (prefers-color-scheme: dark) {
-
-    .thanks-card {
-
-        background: #161f2e;
-
-    }
-
-}
-
-
-/* Download Section */
 
 .download-section {
 
@@ -623,6 +477,7 @@ footer a {
     padding-bottom: 100px;
 
 }
+
 
 
 .download-buttons {
@@ -638,6 +493,7 @@ footer a {
     flex-wrap: wrap;
 
 }
+
 
 
 .store-button {
@@ -665,11 +521,13 @@ footer a {
 }
 
 
+
 .store-button:hover {
 
     transform: translateY(-5px);
 
 }
+
 
 
 .store-button small {
@@ -683,6 +541,7 @@ footer a {
 }
 
 
+
 .store-button strong {
 
     display: block;
@@ -692,6 +551,7 @@ footer a {
 }
 
 
+
 .store-icon {
 
     font-size: 32px;
@@ -699,49 +559,265 @@ footer a {
 }
 
 
-<footer>
-
-<div class="footer-brand">
-
-    <img src="Images/logo.png" alt="BoardBank Logo">
-
-    <p>
-        The smarter way to bank during board games.
-    </p>
-
-</div>
+/* ===================================
+   Support Form
+   =================================== */
 
 
-<div class="footer-links">
+.support-form {
 
-    <a href="privacy.html">
-        Privacy Policy
-    </a>
+    display: flex;
 
-    <a href="support.html">
-        Support
-    </a>
+    flex-direction: column;
 
-    <a href="#download">
-        Download
-    </a>
+    gap: 18px;
 
-</div>
+    max-width: 700px;
+
+    margin-top: 40px;
+
+}
 
 
-<div class="footer-bottom">
 
-    <p>
-        © 2026 BoardBank. All rights reserved.
-    </p>
+.support-form input,
+.support-form textarea {
 
-    <p>
-        Contact: boardbank.support@gmail.com
-    </p>
+    padding: 16px;
 
-</div>
+    border-radius: 15px;
 
-</footer>
+    border: 1px solid #d1d5db;
+
+    font-family: inherit;
+
+    font-size: 16px;
+
+}
+
+
+
+.support-form textarea {
+
+    resize: vertical;
+
+    min-height: 180px;
+
+}
+
+
+
+.support-form button {
+
+    width: fit-content;
+
+    cursor: pointer;
+
+    border: none;
+
+}
+
+
+
+
+/* ===================================
+   Thank You Page
+   =================================== */
+
+
+.thanks-page {
+
+    min-height: 75vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    padding: 40px;
+
+}
+
+
+
+.thanks-card {
+
+    max-width: 600px;
+
+    text-align: center;
+
+    padding: 50px;
+
+    border-radius: 30px;
+
+    background: white;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.12);
+
+}
+
+
+
+.checkmark {
+
+    width: 90px;
+
+    height: 90px;
+
+    margin: 0 auto 30px;
+
+    border-radius: 50%;
+
+    background: #00c853;
+
+    color: white;
+
+    font-size: 50px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    animation: pop 0.5s ease;
+
+}
+
+
+
+.thanks-card h1 {
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.thanks-card p {
+
+    margin-bottom: 35px;
+
+    opacity: .8;
+
+}
+
+
+
+@keyframes pop {
+
+    0% {
+
+        transform: scale(.2);
+
+        opacity: 0;
+
+    }
+
+
+    100% {
+
+        transform: scale(1);
+
+        opacity: 1;
+
+    }
+
+}
+
+
+
+
+/* ===================================
+   Privacy / Legal Pages
+   =================================== */
+
+
+.legal-page {
+
+    max-width: 900px;
+
+    margin: 60px auto;
+
+    padding: 50px;
+
+    background: white;
+
+    border-radius: 30px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,0.08);
+
+}
+
+
+
+.legal-page h1 {
+
+    text-align: center;
+
+    font-size: 42px;
+
+    margin-bottom: 20px;
+
+}
+
+
+
+.legal-page h2 {
+
+    margin-top: 45px;
+
+    margin-bottom: 15px;
+
+    font-size: 24px;
+
+}
+
+
+
+.legal-page p {
+
+    line-height: 1.7;
+
+    opacity: 0.85;
+
+}
+
+
+
+
+/* ===================================
+   Footer
+   =================================== */
+
+
+footer {
+
+    margin-top: 80px;
+
+    padding: 60px 30px 30px;
+
+    border-top: 1px solid rgba(0,0,0,0.08);
+
+}
+
+
+
+.footer-container {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    display: grid;
+
+    grid-template-columns: 2fr 1fr 1fr;
+
+    gap: 50px;
+
+}
+
 
 
 .footer-brand img {
@@ -754,30 +830,158 @@ footer a {
 
     object-fit: contain;
 
-    margin-bottom: 15px;
+}
+
+
+
+.footer-brand p {
+
+    margin-top: 15px;
+
+    opacity: .7;
 
 }
 
 
-/* Fix footer logo size */
 
-footer .footer-brand img {
+.footer-links,
+.footer-contact {
 
-    height: 50px;
-    width: auto;
-    max-width: 160px;
-    object-fit: contain;
-    margin-bottom: 15px;
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 12px;
 
 }
 
 
-/* Mobile Optimisation */
 
-@media (max-width: 700px) {
+.footer-links h3,
+.footer-contact h3 {
+
+    margin-bottom: 10px;
+
+}
 
 
-    /* Navigation */
+
+.footer-links a {
+
+    color: inherit;
+
+    text-decoration: none;
+
+    opacity: .75;
+
+}
+
+
+
+.footer-links a:hover {
+
+    opacity: 1;
+
+}
+
+
+
+.footer-contact p {
+
+    opacity: .75;
+
+}
+
+
+
+.footer-bottom {
+
+    max-width: 1100px;
+
+    margin: 40px auto 0;
+
+    padding-top: 25px;
+
+    border-top: 1px solid rgba(0,0,0,0.08);
+
+    text-align: center;
+
+    opacity: .6;
+
+}
+
+
+
+
+/* ===================================
+   Dark Mode
+   =================================== */
+
+
+@media (prefers-color-scheme: dark) {
+
+
+    body {
+
+        background: #0b1220;
+
+        color: white;
+
+    }
+
+
+
+    header {
+
+        background: rgba(11,18,32,0.7);
+
+    }
+
+
+
+    .card,
+    .thanks-card,
+    .legal-page {
+
+        background: #161f2e;
+
+        color: white;
+
+    }
+
+
+
+    .secondary {
+
+        border-color: #374151;
+
+        color: white;
+
+    }
+
+
+
+    .store-button {
+
+        background: white;
+
+        color: #111827;
+
+    }
+
+
+}
+
+
+
+
+/* ===================================
+   Mobile Optimisation
+   =================================== */
+
+
+@media (max-width:700px) {
+
 
     .navbar {
 
@@ -790,6 +994,7 @@ footer .footer-brand img {
         gap: 15px;
 
     }
+
 
 
     .nav-links {
@@ -805,6 +1010,7 @@ footer .footer-brand img {
     }
 
 
+
     .logo img {
 
         height: 45px;
@@ -812,8 +1018,6 @@ footer .footer-brand img {
     }
 
 
-
-    /* Hero */
 
     .hero {
 
@@ -828,11 +1032,13 @@ footer .footer-brand img {
     }
 
 
+
     .hero h1 {
 
         font-size: 42px;
 
     }
+
 
 
     .hero p {
@@ -842,6 +1048,7 @@ footer .footer-brand img {
     }
 
 
+
     .buttons {
 
         flex-direction: column;
@@ -849,6 +1056,7 @@ footer .footer-brand img {
         align-items: center;
 
     }
+
 
 
     .button {
@@ -863,13 +1071,12 @@ footer .footer-brand img {
 
 
 
-    /* Sections */
-
     section {
 
         padding: 60px 20px;
 
     }
+
 
 
     section h2 {
@@ -882,13 +1089,12 @@ footer .footer-brand img {
 
 
 
-    /* Feature cards */
-
     .feature-grid {
 
         grid-template-columns: 1fr;
 
     }
+
 
 
     .card {
@@ -899,8 +1105,6 @@ footer .footer-brand img {
 
 
 
-    /* Screenshots */
-
     .screenshot-card {
 
         flex: 0 0 230px;
@@ -908,8 +1112,6 @@ footer .footer-brand img {
     }
 
 
-
-    /* Download buttons */
 
     .store-button {
 
@@ -921,13 +1123,47 @@ footer .footer-brand img {
 
 
 
-    /* Footer */
+    .footer-container {
 
-    footer {
+        grid-template-columns: 1fr;
 
         text-align: center;
 
-        padding: 40px 20px;
+    }
+
+
+
+    .footer-brand img {
+
+        margin: auto;
+
+    }
+
+
+
+    .legal-page {
+
+        margin: 30px 20px;
+
+        padding: 30px 25px;
+
+        border-radius: 20px;
+
+    }
+
+
+
+    .legal-page h1 {
+
+        font-size: 34px;
+
+    }
+
+
+
+    .legal-page h2 {
+
+        font-size: 21px;
 
     }
 
